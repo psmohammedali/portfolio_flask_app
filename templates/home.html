@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+     <!-- Favicon -->
+ <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename ='icons/favicon/apple-touch-icon.png')}}">
+ <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename ='icons/favicon/favicon-32x32.png')}}">
+ <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename ='icons/favicon/favicon-16x16.png')}}"> 
+ <link rel="manifest" href="{{url_for('static', filename ='icons/favicon/site.webmanifest')}}">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="my_css.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename ='css/home_css.css')}}">
+    <title> Mohammed Ali | Portfolio</title>
+</head>
+<body>
+
+    <h1>Hello World, This is Mohammed Ali.</h1>
+    <h3>I'm <span id ="element"></span></h3>
+    
+
+    <div class="projects">
+        <p><img src="{{url_for('static', filename ='icons/danger_16.png')}}" alt="" srcset=""><b> Projects under Construction</b></p>
+        <br>
+        <a href="https://github.com/psmohammedali/birthday_email_app">
+            <button class="button-85" role="button">E-Trigger Project</button>
+        </a>
+        <a href="https://www.google.com">
+            <button class="button-85" role="button">NetPort Project</button>
+        </a>
+        <a href="https://www.google.com">
+            <button class="button-85" role="button">EnumGather Project</button>
+        </a>
+        <a href="https://github.com/psmohammedali/Fire-Detection/">
+            <button class="button-85" role="button">Fire Detection ML Project</button>
+        </a>
+    </div>
+    
+    <footer>
+
+        <a class = "social" href="https://www.linkedin.com/in/psmohammedali/" target="_blank">
+            <img src="{{url_for('static', filename ='icons/linked_32.png')}}" alt="linkedin_icon">
+        </a>
+
+
+        <a class = "social" href="https://github.com/psmohammedali" target="_blank">
+            <img src="{{url_for('static', filename ='icons/github_32.png')}}" alt="github_icon">
+        </a>
+
+
+        <a class = "social" href="mailto:psmohammedali4@gmail.com" target="_blank">
+            <img src="{{url_for('static', filename ='icons/gmail_32.png')}}" alt="gmail_icon">
+        </a>
+
+        <a class = "social" href="https://leetcode.com/psmohammedali/" target="_blank">
+            <img src="{{url_for('static', filename ='icons/leetcode_32.png')}}" alt="leetcode_icon">
+        </a>
+
+        <a class = "social" href="https://www.hackerrank.com/psmohammedali" target="_blank">
+            <img src="{{url_for('static', filename ='icons/hackerrank_32.png')}}" alt="hackerrank_icon">
+        </a>
+
+        <a class = "social" href="https://www.instagram.com/psmohammedali/" target="_blank">
+            <img src="{{url_for('static', filename ='icons/instagram_32.png')}}" alt="instagram_icon">
+        </a>
+
+        <a class = "social" href="{{url_for('show')}}" target="_blank">
+            <img src="{{url_for('static', filename ='icons/cv_32.png')}}" alt="cv_icon">
+        </a>
+
+        
+
+      </footer>
+
+
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+  
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Cybersecurity Analyst',
+                "Penetration Tester",
+                "2x Azure Certified",
+                'Technical Content Writer',
+                'Quotes Writer'],
+        typeSpeed: 100,
+        backSpeed:100,
+        loop:true
+      });
+
+    </script>
+</body>
+</html>

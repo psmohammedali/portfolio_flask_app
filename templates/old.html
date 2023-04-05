@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- {{url_for('static', filename ='icons/danger_16.png')}} -->
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+ <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename ='images/apple-touch-icon.png')}}">
+ <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename ='images/favicon-32x32.png')}}">
+ <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename ='images/favicon-16x16.png')}}"> 
+ <link rel="manifest" href="{{url_for('static', filename ='images/site2.webmanifest')}}">
+  
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+  integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
+  crossorigin="anonymous">
+  
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Mohammed Ali PS | Personal</title>
+
+<style>
+  header{
+    background-image:url("{{url_for('static', filename ='images/img4.jpg')}}");
+    background-position: center;
+    background-size: cover;
+    min-height: 1000px;
+    opacity: 0.9; 
+    }
+    @media screen and (max-width: 650px){
+        header{
+            min-height:650px;
+        }
+    }
+   
+    p,h1,h2,h3,h4,h5,h6,a{
+      font-family: 'Times New Roman', Times, serif;
+    }
+     
+    .only{
+      background-image: url("{{url_for('static', filename ='images/bb1.png')}}");
+      background-position: center;
+      background-size: cover;
+    }
+
+
+    .only1{
+      background-image: url("{{url_for('static', filename ='images/bb2.png')}}");
+      background-position: center;
+      background-size: cover;      
+    }
+       .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .parallax-container{
+      padding-bottom: 20px;
+    }
+
+</style>
+
+</head>
+<body>
+    <!--Header and Navbar-->
+     <header>
+        <nav class="navbar-wrapper Red darken-1">
+            <div class="container">
+                <a class="brand-logo">Ali </a>
+                <a href="#" class="sidenav-trigger left hide-on-large-only" data-target = "mobile-links">
+                    <i class="material-icons">work</i>
+                </a>     
+            <ul class = "right hide-on-med-and-down ">
+                <li><a href="#" class="z-depth-4 waves-effect waves-dark">About Me</a></li>
+                <li><a href="#journey" class="z-depth-3 waves-effect waves-dark">Journey</a></li>
+                <li><a href="#writings" class="z-depth-3 waves-effect waves-dark">Writings</a></li>
+                <li><a href="#skills" class="z-depth-2 waves-effect waves-dark ">Skills</a></li>
+                <li><a href="#text-me" class="z-depth-1 waves-effect waves-dark">Text Me</a></li>
+                
+                <li><a href="https://www.instagram.com/quotes_marathon/" class=" tooltipped btn-floating btn-small Red darken-1" data-tooltip ="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/psmohammedali/" 
+                  class="tooltipped btn-floating btn-small Red darken-1" data-tooltip ="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a></li>
+                <li><a href="https://github.com/psmohammedali" class=" tooltipped btn-floating btn-small Red darken-1" data-tooltip ="Github Profile">
+                  <i class="fab fa-github"></i>
+                </a></li>
+            </ul>
+
+        </div>
+        </nav>
+     </header>
+   <ul class="sidenav grey lighten-2" id = "mobile-links">
+     <li><h5 class="center-align">Mohammed Ali P S</h5></li>
+     <div class="divider black"></div>
+    <li><a href="#"         class="waves-effect waves-dark"><h5>About Me</h5></a></li>
+    <li><a href="#journey"  class="waves-effect waves-dark"><h5>journey</h5></a></li>
+    <li><a href="#writings" class="waves-effect waves-dark"><h5>Writings</h5></a></li>
+    <li><a href="#skills"   class="waves-effect waves-dark"><h5>Skills</h5></a></li>
+    <li><a href="#text-me"  class="waves-effect waves-dark"><h5>Text Me</h5></a></li>
+    <div class="divider grey"></div>
+    <li><div class="subheader"><h5 class="center-align">Profile Links</h5></div> </li>
+    <li><a href="https://www.instagram.com/quotes_marathon/"><i class="fab fa-instagram prefix"></i><p class="flow-text">Instagram</p></a></li>
+    <li><a href="https://www.linkedin.com/in/psmohammedali/"><i class="fab fa-linkedin"></i><p class="flow-text">LinkedIn</p></a></li>
+    <li><a href="https://github.com/psmohammedali"><i class="fab fa-github"></i><p class="flow-text">GitHub</p></a></li>
+  </ul> 
+
+
+  <!-- Schooling Details -->
+       <div class= "only">
+         <h4 class="center ">My Journey towards Education </h4>
+      <section class="container section scrollspy" id = "journey">
+        <div class="row">
+          <div class="col s12 l4">
+            <img src="{{url_for('static', filename ='images/school1.png')}}" alt="School1" class = " responsive-img materialboxed ">
+          </div>
+            <div class="col s12 l6 offset-l1">
+              <h5 class =" Red-text "> B V Reddy School, Chittoor </h5>
+              <h6 class = "red-text text-accent-4"> My Everything</h6> 
+              <p class="flow-text"> “It’s one of my favorite seasons of the year: Back to School. 
+                As a kid, I loved fresh school supplies, new outfits, the change of seasons, 
+                and the chance to crack open a new textbook.” 
+                <i> - Dana Perino</i>
+              </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l6 ">
+              <h5 class =" Red-text  right-align"> R K Intermediate College </h5>
+              <h6 class=" red-text text-accent-4 right-align"> Deciding Way</h6> 
+              <p class="flow-text"> “High school is what kind of grows you into the person you are. 
+                I have great memories, good and bad, some learning experiences and some that I’ll take with me the rest of my life.” 
+               <i> – Giancarlo Stanton</i>
+              </p>
+            </div>
+            <div class="col s12 l4 offset-l2">
+              <img src="{{url_for('static', filename ='images/school2.png')}}" alt="School2" class = "responsive-img materialboxed">
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 l5 ">
+            <img src="{{url_for('static', filename ='images/school3.png')}}" alt="School1" class = "responsive-img materialboxed">
+          </div>
+            <div class="col s12 l6 ">
+              <h5 class =" Red-text"> VIT University, Vellore Campus</h5>
+              <h6 class = "red-text text-accent-4"> My Dream</h6> 
+              <p class="flow-text"> “No period of my life has been one of such unmixed happiness as the four years 
+                which have been spent within college walls.” 
+                <i>Horatio Alger</i>
+              </p>
+            </div>
+        </div>
+      </section>
+    </div>
+
+  <!-- parallax -->
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="{{url_for('static', filename ='images/p2.png')}}" alt="">
+        </div>
+      </div>
+
+
+
+
+
+
+ <!--Card informations-->
+ <div class = "only1 scrollspy" id= "writings">
+ <h4 class="center">My Writings</h4>
+<div class="row">
+  <div class="col s12 m6 l6">
+    <div class="card card-panel hoverable">
+      <div class="card-image">
+        <img src="{{url_for('static', filename ='images/card1.png')}}" alt="card1">
+        <a href="#submitted1" class="btn-floating btn-large halfway-fab red modal-trigger">
+          <i class="material-icons">stars</i>
+        </a>
+      </div>
+      <div class="card-content">
+        <p class="card-title ">The World has a Revenge Letter for you..</p>
+        <p class="">I could see many started doing rituals at temples, namaz at mosques, 
+          forgive prayers at church, Not only at religious locations but also at every house.
+          My question is “how is God involved in this?”, Do you think, God is punishing us?.</p>
+          <p class="truncate">Of course, Not. He is no way related to this issue and we should consider god as a third person, 
+            looking all these funny plays in his own Comfortableness.</p>
+      </div>
+      <div class="card-action center-align ">
+        <a href="https://www.linkedin.com/pulse/world-has-revenge-letter-you-mohammed-ali-p-s/" class="red-text">Click Here to read full Story</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m6 l6">
+    <div class="card card-panel hoverable">
+      <div class="card-image">
+        <img src="{{url_for('static', filename ='images/card2.png')}}" alt="card2">
+        <a href="#submitted1" class="btn-floating btn-large  halfway-fab red modal-trigger">
+          <i class="material-icons">stars</i>
+        </a>
+      </div>
+      <div class="card-content ">
+        <p class="card-title">Corona Virus- A Threat for life (or) A Reminder for happy memories.</p>
+        <p>I my 20 years lifetime, I never seen such a situation that made world to house arrest. I could see night life scenario in day time itself. 
+           </p>
+          <p class="truncate">Roads are taking rest, the entire India has its population in houses.The busy jam-packed streets are now graveyards. The government officials are in dilemma, 
+            Social media flooded with safety precautions, fake messages, Cheap political publicity</p>
+      </div>
+      <div class="card-action center-align ">
+        <a href="https://www.linkedin.com/pulse/corona-virus-threat-life-reminder-happy-memories-mohammed-ali-p-s/" class="red-text">Click Here to read full Story</a>
+      </div>
+    </div>
+  </div>
+   
+  <div class="col s12 m6 l6">
+    <div class="card card-panel hoverable ">
+      <div class="card-image ">
+        <img src="{{url_for('static', filename ='images/card3.png')}}" alt="card3">
+        <a href="#submitted1" class="btn-floating btn-large halfway-fab red modal-trigger">
+          <i class="material-icons">stars</i>
+        </a>
+      </div>
+      <div class="card-content ">
+        <p class="card-title ">Our Contributions towards Nation - Republic India.</p>
+        <p> As of yesterday’s, scenario, we could be seen lot of celebrations that happened all around the India. </p>
+          <p class="truncate">Lot of meetings are held both for children and family members started with explaining t</p>
+      </div>
+      <div class="card-action center-align ">
+        <a href="https://www.linkedin.com/pulse/our-contributions-towards-nation-republic-india-mohammed-ali-p-s/" class="red-text">Click Here to read full Story</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="{{url_for('static', filename ='images/p2.png')}}" alt="">
+    </div>
+  </div>
+
+<!-- Skills -->
+
+  <h2 class="center-align">Skills</h2>
+  <div class="container scrollspy" id = "skills">
+
+            <!--Row 2-->
+     <div class="row">
+       <div class="col l2"></div>
+       <div class="col "> <a href="" class = "btn red darken-2 hoverable">HTML</a> </div>
+       <div class="col"> <a href="" class = "btn red darken-2 hoverable z-depth-3">CSS</a> </div>
+       <div class="col"> <a href="" class = "btn red darken-2 hoverable">JavaScript</a> </div>
+       <div class="col"> <a href="" class = "btn red darken-2 hoverable z-depth-3">JQuery</a> </div>
+       <div class="col"> <a href="" class = "btn red darken-2 hoverable">materialize CSS</a> </div>
+       <div class="col"> <a href="" class = "btn red darken-2 hoverable z-depth-3">JQuery</a> </div>
+     </div>
+       <!--Row 3-->
+       <div class="row">
+        <div class="col l2 "></div>
+        <div class="col"> <a href="" class = "btn red darken-2 hoverable z-depth-3">C</a> </div>
+        <div class="col"> <a href="" class = "btn red darken-2 hoverable">C#</a> </div>
+        <div class="col"> <a href="" class = "btn red darken-2 hoverable z-depth-3">Java</a> </div>
+        <div class="col"> <a href="" class = "btn red darken-2 hoverable">.NET</a> </div>
+        <div class="col"> <a href="" class = "btn red darken-2 hoverable z-depth-3">Python</a> </div>
+        <div class="col"> <a href="" class = "btn red darken-2 hoverable">Andriod Studio</a> </div>
+       </div>
+
+       <!--Row 3-->
+       <div class="row">
+        <div class="col l2 "></div>
+        <div class="col"> <a href="" class = "btn red darken-2 hoverable z-depth-3">Software Project Management</a> </div>
+        <div class="col"> <a href="" class = "btn red darken-2 hoverable">Software Testing</a> </div>
+        <div class="col"> <a href="" class = "btn red darken-2 hoverable z-depth-3">OS</a> </div>
+       </div>
+  </div>
+
+
+
+
+
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="{{url_for('static', filename ='images/p2.png')}}" alt="">
+      </div>
+    </div>
+
+  <!-- contact form -->
+        <section class="container section scrollspy" id="text-me">
+          <div class="row">
+            <div class="col s12 l5">
+              <h5 class = "center-align">Get In Touch, Friends </h5><br>
+              <h6 class=""><i>“No one is useless in this world who lightens the burdens of another ”</i></h6>
+              <h6 class="right-align"><i> - Charles Dickens ”</i></h6><br>
+              <p class= "center-align"> So, Feel free to text me 24/7. I am always ready to help you dudes...</p>
+               
+            </div>
+          
+           <div class="col s12 l5 offset-l2">
+
+             <form action="">
+              <h6 class = "Center">Drop a Message</h6>
+               <div class="input-field">
+                 <i class="material-icons prefix">email</i>
+                 <textarea name="mail" class="materialize-textarea" id="mail" ></textarea>
+                   <label for="mail">Please Enter your mail Id</label>
+                 
+                 <!--
+                   <input type="email" id = "email">
+                 <label for="email">Please enter Your Email</label>
+                 -->
+                 
+               </div>
+                           
+                <div class="input-field">
+                  <i class="material-icons prefix">account_circle</i>
+                <textarea name="name" id="name" class="materialize-textarea"></textarea>
+                <label for="name">Enter Your Name</label>   
+                </div>
+
+                <div class="input-field">
+                  <i class="material-icons prefix">message</i>
+                  <textarea  id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Your Message</label>
+                 </div>
+
+                 <p class = >Do you know me ?</p>      
+                <div class="input-field">
+                 <p>
+                   <label>
+                    <input type="checkbox">
+                    <span>Yes</span>
+                   </label>
+                 </p>
+                 <p>
+                  <label>
+                   <input type="checkbox">
+                   <span>No</span>
+                 </label>
+                </p>
+                </div>
+                
+                 <div class="input-field center">
+                   <a href="#submitted1" class="btn Red modal-trigger ">Submit</a>
+                 </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!--Creating a Modal to submit-->
+         <div class="modal" id="submitted2">
+          <div class="modal-content">
+            <h5>Hurry!, You have submitted your Message successfully</h5>
+          </div> 
+          <div class="modal-footer">
+            <a href="#" class="btn red modal-close">OK</a>
+          </div>
+         </div>
+
+
+         <!-- Modal for clicking favorite button in cards-->
+        <!--Creating a Modal to submit-->
+        <div class="modal" id="submitted1">
+          <div class="modal-content">
+            <h5>Thanks for liking Dude, Check out other articles too...</h5>
+          </div> 
+          <div class="modal-footer">
+            <a href="#" class="btn red modal-close">OK</a>
+          </div>
+         </div>
+
+  <!-- footer -->
+      <footer class="footer-page grey lighten-2">
+      <div class="container">
+        <div class="row s12 l6">
+          <div class = "col s12 l6">
+          <h6 class="center-align"><b>In Emergency</b></h6>
+          <p>In case of urgency contact, You can mail to my personal mail Id, The link is given below</p>
+          <ul class="">
+          <li><a href="mailto: psmohammedali4@tech" class="black-text"><i class="fas fa-envelope"></i> Personal Mail</a></li>
+          <li><a href="tel: 8919297394" class="black-text"><i class="fas fa-phone"></i> Contact Number</a></li>
+          <li><a href="https://goo.gl/maps/fgwpfPL6LyAsggFy6" class="black-text"><i class="fa fa-address-card"></i> SJT Buildings, VIT University, Vellore.</a></li>
+          </ul>  
+        </div>
+
+        <div class="col s12 l4 offset-l2"> 
+          <h6>Connect Me through</h6>
+          <ul >
+            
+            <li><a href="mailto: info@psmohammedali.tech" class="black-text"> <i class="fas fa-envelope"></i> Official Mail</a></li>
+            <li><a href="https://www.linkedin.com/in/psmohammedali/" class="black-text"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/quotes_marathon/" class="black-text"><i class="fab fa-instagram"></i> Instagram/QuotesMarathon</a></li>
+            <li><a href="https://github.com/psmohammedali" class="black-text"><i class="fab fa-github"></i> Github Profile</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright center-align grey">
+        <div class= "container">&copy;Mohammed Ali 2020</div>
+      </footer>
+
+   
+
+  <!-- Compiled and minified JavaScript -->
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  
+  <!-- Written Scripts-->
+  <script>
+    $(document).ready(function(){
+    $('#mobile-links').sidenav()
+    $('.materialboxed').materialbox();
+    $('.parallax').parallax();
+    $('.tooltipped').tooltip();
+    $('.modal').modal();
+    $('.scrollspy').scrollSpy();
+    });
+  </script>
+</body>
+</html>
+
