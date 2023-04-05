@@ -16,4 +16,4 @@ def old_portfolio():
 
 
 if __name__ == "__main__":
-    my_app_obj.run()
+    my_app_obj.run(debug=False,host='0.0.0.0')
